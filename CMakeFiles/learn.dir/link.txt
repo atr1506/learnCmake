@@ -1,1 +1,0 @@
-/usr/bin/cc  -g CMakeFiles/learn.dir/main.c.o -o learn  liblibstat.a liblibmath.a 

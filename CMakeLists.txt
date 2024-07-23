@@ -18,7 +18,7 @@ message(STATUS "source path: ${CMAKE_CURRENT_SOURCE_DIR}")
 add_library(libmath STATIC math/math.c)
 
 target_include_directories(libmath PUBLIC  math/interface)
-target_include_directories(libmath PRIVATE math/include)
+target_include_directories(libmath PRIVATE math/include)#头文件属性只有在链接到了这个target时才生效，如果不链接到libmath时，头文件属性无效。
 
 
 add_library(libstat STATIC stat/stat.c)
