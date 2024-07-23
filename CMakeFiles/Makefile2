@@ -134,8 +134,8 @@ CMakeFiles/libstat.dir/clean:
 # Target rules for target CMakeFiles/learn.dir
 
 # All Build rule for target.
-CMakeFiles/learn.dir/all: CMakeFiles/libmath.dir/all
 CMakeFiles/learn.dir/all: CMakeFiles/libstat.dir/all
+CMakeFiles/learn.dir/all: CMakeFiles/libmath.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/learn.dir/build.make CMakeFiles/learn.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wei/VsCode/cmakeLearn/CMakeFiles --progress-num=1,2 "Built target learn"

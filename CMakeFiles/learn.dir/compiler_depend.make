@@ -27,11 +27,14 @@ CMakeFiles/learn.dir/main.c.o: main.c \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  math/include/mymath.h \
   math/interface/math_if.h \
   stat/include/stat.h
 
 
 math/interface/math_if.h:
+
+math/include/mymath.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 

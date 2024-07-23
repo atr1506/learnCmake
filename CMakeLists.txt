@@ -23,9 +23,9 @@ target_include_directories(libmath PRIVATE math/include)
 
 add_library(libstat STATIC stat/stat.c)
 target_include_directories(libstat PUBLIC stat/include)
-target_include_directories(libstat PRIVATE math/include) #注意这里的顺序
+target_include_directories(libstat PRIVATE math/include) #target_include_directories的private表示其它target链接libstat时 libstat的头文件只对libstat可见，对其他target不可见。在main.c中调用包含mymath.h会报 “找不到头文件”
 
-target_link_libraries(libstat PUBLIC libmath)
+target_link_libraries(libstat PUBLIC libmath)#target_link_libraries的private表示其它target链接libstat时不会链接libmath，在main.c中调用math的函数会报“未定义的引用”错误
 print_link_libs(libstat)
 
 

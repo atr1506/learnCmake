@@ -28,6 +28,7 @@ CMakeFiles/learn.dir/main.c.o
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h
  /usr/include/x86_64-linux-gnu/bits/floatn.h
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h
+ /home/wei/VsCode/cmakeLearn/math/include/mymath.h
  /home/wei/VsCode/cmakeLearn/math/interface/math_if.h
  /home/wei/VsCode/cmakeLearn/stat/include/stat.h
 

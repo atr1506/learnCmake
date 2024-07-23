@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/wei/VsCode/cmakeLearn/stat/include -I/home/wei/VsCode/cmakeLearn/math/interface
+C_INCLUDES = -I/home/wei/VsCode/cmakeLearn/stat/include -I/home/wei/VsCode/cmakeLearn/math/interface -I/home/wei/VsCode/cmakeLearn/math/include
 
 C_FLAGS =  -g -std=gnu11
 
