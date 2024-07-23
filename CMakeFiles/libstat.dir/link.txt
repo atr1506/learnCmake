@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibstat.a CMakeFiles/libstat.dir/stat/stat.c.o
+/usr/bin/ranlib liblibstat.a

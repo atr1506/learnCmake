@@ -1,0 +1,5 @@
+/home/wei/VsCode/cmakeLearn/CMakeFiles/libmath.dir
+/home/wei/VsCode/cmakeLearn/CMakeFiles/libstat.dir
+/home/wei/VsCode/cmakeLearn/CMakeFiles/learn.dir
+/home/wei/VsCode/cmakeLearn/CMakeFiles/edit_cache.dir
+/home/wei/VsCode/cmakeLearn/CMakeFiles/rebuild_cache.dir

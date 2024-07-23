@@ -1,0 +1,38 @@
+cmake_minimum_required(VERSION 3.22)
+project(learnCmake)
+
+function(print_link_libs tgt)
+    get_target_property(res ${tgt} LINK_LIBRARIES)
+    message(STATUS "link libs of ${tgt}: ${res}")
+    get_target_property(res ${tgt} INTERFACE_LINK_LIBRARIES)
+    message(STATUS "interface link libs of ${tgt}: ${res}")
+endfunction(print_link_libs tgt)
+
+
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g")
+set(CMAKE_C_STANDARD 11)
+
+message(STATUS "source path: ${CMAKE_CURRENT_SOURCE_DIR}")
+
+add_library(libmath STATIC math/math.c)
+
+target_include_directories(libmath PUBLIC  math/interface)
+target_include_directories(libmath PRIVATE math/include)
+
+
+add_library(libstat STATIC stat/stat.c)
+target_include_directories(libstat PUBLIC stat/include)
+target_include_directories(libstat PRIVATE math/include) #注意这里的顺序
+
+target_link_libraries(libstat PUBLIC libmath)
+print_link_libs(libstat)
+
+
+add_executable(learn main.c)
+target_link_libraries(learn PUBLIC libstat)
+print_link_libs(learn)
+
+# add_executable(learnstat mainStat.c)
+# # target_include_directories(learnstat PUBLIC stat/include)
+# target_link_libraries(learnstat PUBLIC libstat)
